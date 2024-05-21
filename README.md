@@ -43,7 +43,7 @@ This stage aims to build trust.
     ```sh
     git clone https://github.com/natycalvob/storytellingwithrobots.git
     ```
-
+2. **Storytelling GUI**: https://playcanv.as/p/2sWzC1ad/
 ## Publications
 - Calvo-Barajas, N., & Castellano, G. (2022, August). Understanding children’s trust development through repeated interactions with a virtual social robot. In 2022 31st IEEE International Conference on Robot and Human Interactive Communication (RO-MAN) (pp. 1451-1458). IEEE.
 - Calvo-Barajas, N., & Castellano, G. (2022, September). "I have an idea!" enhancing children's verbal creativity through repeated interactions with a virtual robot. In Proceedings of the 22nd ACM International Conference on Intelligent Virtual Agents (pp. 1-8).
