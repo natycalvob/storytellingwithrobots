@@ -10,12 +10,9 @@ The interaction is designed to be engaging and educational, encouraging children
     - [Storytelling](#storytelling)
     - [Small Talk](#small-talk)
     - [Self-Disclosure](#self-disclosure)
-2. [Hardware Requirements](#hardware-requirements)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Publications](#publications)
-6. [Contributing](#contributing)
-7. [License](#license)
+2. [Installation](#installation)
+3. [Publications](#publications)
+
 
 ## Stages of Interaction
 The interaction comprises three stages: 
@@ -41,47 +38,12 @@ The self-disclosure stage allows the child to share personal experiences and fee
 the child to talk about things they are good at, things they find challenging, and other personal topics. 
 This stage aims to build trust.
 
-## Hardware Requirements
-- **Computer**: A computer capable of running the virtual agent software.
-- **Microphone**: A good quality microphone to capture the child's voice clearly.
-- **Speakers**: Quality speakers to ensure the child can hear the virtual agent properly.
-
 ## Installation
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/yourusername/storytelling-interaction.git
-    cd storytelling-interaction
-    ```
-2. **Install Dependencies**:
-   Ensure you have Kotlin and any other required dependencies installed. You may use a build tool like Gradle.
-    ```sh
-    ./gradlew build
-    ```
-3. **Run the Application**:
-    ```sh
-    ./gradlew run
+    git clone https://github.com/natycalvob/storytellingwithrobots.git
     ```
 
-## Usage
-Once the application is running, follow the on-screen instructions to start the interaction. The virtual agent will guide the child through the storytelling, small talk, and self-disclosure stages.
-
-### Sample Code
-```kotlin
-val SmallTalkIntro = state(Interaction) {
-    onButton("Hello", color = Color.Blue, section = Section.LEFT) {
-        furhat.say("Hello. My name is Niky. What is your name?")
-    }
-    onButton("NiceMeetU") {
-        furhat.gesture(Gestures.Smile)
-        furhat.say("Nice to meet you. ${furhat.voice.pause("2000ms")}" +
-                " ${furhat.voice.emphasis("I am so happy to play with you today!")}" +
-                " ${furhat.voice.pause("1000ms")}" +
-                "Have you played with robots before?")
-    }
-    // Add more buttons and responses as needed
-}
-
-```
 ## Publications
 - Calvo-Barajas, N., & Castellano, G. (2022, August). Understanding children’s trust development through repeated interactions with a virtual social robot. In 2022 31st IEEE International Conference on Robot and Human Interactive Communication (RO-MAN) (pp. 1451-1458). IEEE.
 - Calvo-Barajas, N., & Castellano, G. (2022, September). "I have an idea!" enhancing children's verbal creativity through repeated interactions with a virtual robot. In Proceedings of the 22nd ACM International Conference on Intelligent Virtual Agents (pp. 1-8).
