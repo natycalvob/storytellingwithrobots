@@ -13,7 +13,7 @@ val Interaction: State = state() {
     onButton("SmallTalkIntro", color = Color.Blue, section = Section.LEFT) {
         goto(SmallTalkIntro)
     }
-    onButton("SmallTalkDisclosure", color = Color.Green, section = Section.LEFT) {
+    onButton("DisclosureTask", color = Color.Green, section = Section.LEFT) {
         goto(SmallTalkDisclosure)
     }
     onButton("Storytelling", color = Color.Red, section = Section.LEFT) {

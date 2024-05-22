@@ -71,6 +71,9 @@ val AskMoviePreference = state(Interaction) {
         furhat.ask("Have you seen that movie?")
     }
 
+    onReentry{
+        furhat.ask("Have you seen Frozen, the movie?")
+    }
     onResponse<Yes> {
         furhat.say("${furhat.voice.emphasis("Wow")} It seems that it is a very famous movie. Did you like it?")
         goto(MoviePreferenceResponse)
@@ -110,6 +113,9 @@ val AskStory = state(Interaction) {
         furhat.ask("I would like to learn from you. Would you tell me a story?")
     }
 
+    onReentry{
+        furhat.ask("Would you tell me a story?")
+    }
     onResponse<Yes> {
         furhat.say("${furhat.voice.emphasis("Nice!")} Let's start our story game.")
         // Transition to a story-telling state if available
